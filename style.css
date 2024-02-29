@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #007AFF;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -160,6 +160,18 @@ section {
   display: flex;
 }
 
+.section__text__p01 {
+
+  color: #3a97fa;
+  
+}
+
+.section__text__p2 {
+
+  color: #3a97fa;
+  
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -231,7 +243,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #007AFF 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -239,22 +251,24 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+.btn-color-1 {
+  background: white;
+  color: black;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #3a97fa;
+  color: white;
 }
 
 .btn-color-2 {
-  background: none;
+  background: white;
+  color: black;
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  background: #3a97fa;
+  color: white;
 }
 
 .btn-container {
@@ -430,3 +444,38 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+/* IMAGE FADE IN */
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn-animation-text {
+  animation: 3s fadeIn;
+}
+
+
